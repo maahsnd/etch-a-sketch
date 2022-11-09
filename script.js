@@ -6,7 +6,9 @@ for (j = 0; j < 16; j++){
         div.setAttribute('id', 'theDiv'+i);
         div.setAttribute('class', 'gridDiv');
         div.style.cssText = 'border: 1px black solid; aspect-ratio: 1;';
+        addEventListener('mouseover', (event) => {
+            div.style.backgroundColor = 'purple';
+        });
         gridContainer.appendChild(div);
-        console.log(8);
     }
 }

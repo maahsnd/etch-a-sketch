@@ -6,7 +6,7 @@ for (i = 0; i < (16 * 16); i++) {
     div.setAttribute('class', 'gridDiv');
     console.log(div.getAttribute('id'));
     div.style.cssText = 'border: 1px black solid; aspect-ratio: 1;';
-    addEventListener('mouseover', (e) => {
+    div.addEventListener('mouseover', (e) => {
         //console.log(e);
         e.target.style.backgroundColor = 'purple';
         e.stopPropagation();

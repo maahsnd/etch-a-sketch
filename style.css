@@ -1,12 +1,16 @@
-const gridContainer = document.querySelector('.gridContainer');
+.gridContainer {
+    display: grid;
+}
 
-for (j = 0; j < 16; j++){
-    for (i = 0; i < 16; i++) {
-        const div = document.createElement('div');
-        div.setAttribute('id', 'theDiv'+i);
-        div.setAttribute('class', 'gridDiv');
-        div.style.cssText = 'border: 1px black solid; aspect-ratio: 1;';
-        gridContainer.appendChild(div);
-        console.log(8);
-    }
+button {
+    padding: 6px;
+    font-size: 12px;
+    border: 2px solid pink;
+    border-radius: 25%;
+    margin: 2px 0px 8px 0px;
+}
+
+button:hover {
+    background-color: rgba(6, 198, 198, 0.763);
+    cursor: pointer;
 }
